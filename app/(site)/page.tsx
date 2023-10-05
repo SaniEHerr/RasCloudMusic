@@ -2,8 +2,8 @@
 
 export default function Home() {
   return (
-    <div>
-      Hello RasCloud
+    <div className="text-green-500">
+      Main Content
     </div>
   )
 }
