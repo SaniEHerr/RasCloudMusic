@@ -6,7 +6,7 @@ interface UserProviderProps {
   children: React.ReactNode;
 }
 
-const userProvider:React.FC<UserProviderProps> = ({ children }) => {
+const UserProvider:React.FC<UserProviderProps> = ({ children }) => {
   return (
     <MyUserContextProvider>
       {children}
@@ -14,4 +14,4 @@ const userProvider:React.FC<UserProviderProps> = ({ children }) => {
   )
 }
 
-export default userProvider
+export default UserProvider
