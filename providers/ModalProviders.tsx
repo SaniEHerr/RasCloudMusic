@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
-import Modal from '@/components/Modal/Modal'
+import AutchModal from '@/components/AutchModal/AutchModal'
 
 const Modalproviders = () => {
 
@@ -19,14 +19,9 @@ const Modalproviders = () => {
 
   return (
     <>
-      <Modal 
-        title='Text Modal' 
-        description='Test Description' 
-        isOpen
-        onChange={() => {}}
-      >
-        Text Children
-      </Modal>
+      <AutchModal 
+        
+      />
     </>
   )
 }
