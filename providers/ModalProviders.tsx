@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 
 import AutchModal from '@/components/AutchModal/AutchModal'
+import UploadModal from '@/components/UploadModal/UploadModal'
 
 const Modalproviders = () => {
 
@@ -19,9 +20,8 @@ const Modalproviders = () => {
 
   return (
     <>
-      <AutchModal 
-        
-      />
+      <AutchModal />
+      <UploadModal />
     </>
   )
 }
