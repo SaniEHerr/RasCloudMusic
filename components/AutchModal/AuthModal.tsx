@@ -13,7 +13,7 @@ import { useEffect } from "react";
 
 import Modal from "../Modal/Modal"
 
-const AutchModal = () => {
+const AuthModal = () => {
 
   const supabaseClient = useSupabaseClient();
   const router = useRouter();
@@ -62,4 +62,4 @@ const AutchModal = () => {
   )
 }
 
-export default AutchModal
+export default AuthModal

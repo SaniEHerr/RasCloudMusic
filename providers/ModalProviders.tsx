@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
-import AutchModal from '@/components/AutchModal/AutchModal'
+import AuthModal from '@/components/AutchModal/AuthModal'
 import UploadModal from '@/components/UploadModal/UploadModal'
 
 const Modalproviders = () => {
@@ -20,7 +20,7 @@ const Modalproviders = () => {
 
   return (
     <>
-      <AutchModal />
+      <AuthModal />
       <UploadModal />
     </>
   )
