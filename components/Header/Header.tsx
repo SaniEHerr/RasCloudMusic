@@ -12,7 +12,7 @@ import { useUser } from "@/hooks/useUser";
 
 import { RxCaretLeft, RxCaretRight } from "react-icons/rx"
 import { HiHome } from "react-icons/hi"
-import { BiSearch } from "react-icons/bi"
+import { BiSearch, BiSolidHeart } from "react-icons/bi"
 import { FaUserAlt } from "react-icons/fa"
 
 import Button from "../Button/Button";
@@ -31,13 +31,9 @@ const Header: React.FC<HeaderProps> = ( {children, clasName} ) => {
   const supabaseClient = useSupabaseClient();
   const { user } = useUser();
 
-  console.log(user);
-  
-
   const handleLogout = async () => {
     const { error } = await supabaseClient.auth.signOut();
-
-    // TODO: Reset ant playing songs
+    
     router.refresh();
 
     if (error) {
@@ -66,11 +62,25 @@ const Header: React.FC<HeaderProps> = ( {children, clasName} ) => {
         </div>
 
         <div className="flex md:hidden gap-x-2 items-center">
-          <button className="rounded-full p-2 bg-white flex items-center justify-center hover:opacity-75 transition">
+          <button 
+            className="rounded-full p-2 bg-white flex items-center justify-center hover:opacity-75 transition" 
+            onClick={() => router.push('/')} 
+          >
             <HiHome className="text-black" size={20} />
           </button>
-          <button className="rounded-full p-2 bg-white flex items-center justify-center hover:opacity-75 transition">
+
+          <button 
+            className="rounded-full p-2 bg-white flex items-center justify-center hover:opacity-75 transition"
+            onClick={() => router.push('/search')}
+          >
             <BiSearch className="text-black" size={20} />
+          </button>
+
+          <button 
+            className="rounded-full p-2 bg-white flex items-center justify-center hover:opacity-75 transition"
+            onClick={() => router.push('/liked')}
+          >
+            <BiSolidHeart className="text-black" size={20} />
           </button>
         </div>
 

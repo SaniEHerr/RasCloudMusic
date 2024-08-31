@@ -2,7 +2,8 @@
 
 import { 
   useSupabaseClient, 
-  useSessionContext } 
+  useSessionContext,
+} 
 from "@supabase/auth-helpers-react"
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";

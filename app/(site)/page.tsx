@@ -35,9 +35,6 @@ export default async function Home() {
           </h1>
         </div>
         <PageContent songs={songs} />
-        {/* <div>
-          {songs.map((song) => <div> {song.title} </div> )}
-        </div> */}
       </div>
 
     </div>
