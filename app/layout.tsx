@@ -5,7 +5,7 @@ import './globals.css'
 import { Figtree } from 'next/font/google'
 
 // Supabase
-import SupabaseProvider from '../providers/SupabaseProvider'
+import SupabaseProvider from '@/providers/SupabaseProvider'
 
 // Components
 import Sidebar from '@/components/Sidebar/Sidebar'
