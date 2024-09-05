@@ -5,11 +5,11 @@ import './globals.css'
 import { Figtree } from 'next/font/google'
 
 // Supabase
-import SupabaseProvider from '@/providers/SupabaseProvider'
+import SupabaseProvider from '../providers/SupabaseProvider'
 
 // Components
 import Sidebar from '@/components/Sidebar/Sidebar'
-import UserProvider from '@/providers/UserProvider'
+import UserProvider from '../providers/UserProvider'
 import Modalproviders from '@/providers/ModalProviders'
 import ToasterProvider from '@/providers/ToasterProvider'
 import getSongsByUserId from '@/actions/getSongsByUserId'
