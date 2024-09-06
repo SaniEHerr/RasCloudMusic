@@ -10,10 +10,10 @@ import { useRouter } from "next/navigation";
 import useAuthModal from "@/hooks/useAuthModal";
 import { useUser } from "@/hooks/useUser";
 
-// import { RxCaretLeft, RxCaretRight } from "react-icons/rx"
-// import { HiHome } from "react-icons/hi"
-// import { BiSearch, BiSolidHeart } from "react-icons/bi"
-// import { FaUserAlt } from "react-icons/fa"
+import { RxCaretLeft, RxCaretRight } from "react-icons/rx"
+import { HiHome } from "react-icons/hi"
+import { BiSearch, BiSolidHeart } from "react-icons/bi"
+import { FaUserAlt } from "react-icons/fa"
 
 import Button from "../Button/Button";
 
@@ -51,13 +51,13 @@ const Header: React.FC<HeaderProps> = ( {children, clasName} ) => {
             className="rounded-full bg-black flex items-center justify-center hover:opacity-75 transition"
             onClick={() => router.back()}
           >
-            {/* <RxCaretLeft size={35} className="text-white" /> */}
+            <RxCaretLeft size={35} className="text-white" />
           </button>
           <button 
             className="rounded-full bg-black flex items-center justify-center hover:opacity-75 transition"
             onClick={() => router.forward()}
           >
-            {/* <RxCaretRight size={35} className="text-white" /> */}
+            <RxCaretRight size={35} className="text-white" />
           </button>
         </div>
 
@@ -66,21 +66,21 @@ const Header: React.FC<HeaderProps> = ( {children, clasName} ) => {
             className="rounded-full p-2 bg-white flex items-center justify-center hover:opacity-75 transition" 
             onClick={() => router.push('/')} 
           >
-            {/* <HiHome className="text-black" size={20} /> */}
+            <HiHome className="text-black" size={20} />
           </button>
 
           <button 
             className="rounded-full p-2 bg-white flex items-center justify-center hover:opacity-75 transition"
             onClick={() => router.push('/search')}
           >
-            {/* <BiSearch className="text-black" size={20} /> */}
+            <BiSearch className="text-black" size={20} />
           </button>
 
           <button 
             className="rounded-full p-2 bg-white flex items-center justify-center hover:opacity-75 transition"
             onClick={() => router.push('/liked')}
           >
-            {/* <BiSolidHeart className="text-black" size={20} /> */}
+            <BiSolidHeart className="text-black" size={20} />
           </button>
         </div>
 
@@ -97,7 +97,7 @@ const Header: React.FC<HeaderProps> = ( {children, clasName} ) => {
                 className="bg-white"
                 onClick={() => router.push('/account')}
               >
-                {/* <FaUserAlt /> */}
+                <FaUserAlt />
               </Button>
             </div>
           ) : (

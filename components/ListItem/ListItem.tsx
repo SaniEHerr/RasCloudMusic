@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-// import { FaPlay } from "react-icons/fa"
+import { FaPlay } from "react-icons/fa"
 
 interface ListItemProps {
   image: string;
@@ -36,7 +36,7 @@ const ListItem: React.FC<ListItemProps> = ({ image, name, href }) => {
         {name}
       </p>
       <div className="absolute transition opacity-0 rounded-full flex items-center justify-center bg-green-500 p-4 drop-shadow-md right-5 group-hover:opacity-100 hover:scale-110">
-        {/* <FaPlay className="text-black" /> */}
+        <FaPlay className="text-black" />
       </div>
     </button>
   )
